@@ -59,7 +59,7 @@
 		// detect media element track support in browser via the existence of the addtrack method
 		var myVideo = document.getElementsByTagName('video')[0];
 		var tracksupport = typeof myVideo.addTextTrack == "function" ? true : false;	// check for track element method, if it doesn't exist, the browser generally doesn't support track elements
-
+    
 		// first find all video tags
 		$VIDEOSUB('video').each(function(el) {
 			// find track tag (this should be extended to allow multiple tracks and trackgroups) and get URL of subtitle file
