@@ -52,4 +52,9 @@ video#bgvid {
 	}
 }
 
- 
+::cue {
+  color: #FFF;
+  font-family:helvetica;
+  background:rgba(#000000, .7);
+  font-size:.9em;
+}
