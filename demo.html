@@ -11,15 +11,15 @@
     <div class="row videoThumnbContainer">
       <div class="large-12 columns">
         <div class="large-2 columns videoThumb">
-              <video  id="videoThumb1" onclick="playPause('videoThumb1')" poster="video/poster2.png">
+              <video  id="videoThumb1" onmouseover="playPause('videoThumb1')" onclick="getUrl()" poster="video/poster2.png">
                 <source src="video/particle.mp4" type="video/mp4">
               </video>         
         </div>
         <div class="large-2 columns videoThumb">
-            <img src="video/karenVid.png" onclick="playPause('bgvid')" />  
+            <a href="singleVideo.html"><img src="video/karenVid.png"/></a>  
         </div>
                 <div class="large-2 columns videoThumb">
-              <video  id="videoThumb3" onclick="playPause('videoThumb3')" poster="video/poster2.png">
+              <video  id="videoThumb3" onmouseover="playPause('videoThumb3')"  onclick="getUrl()"  poster="video/poster2.png">
                 <source src="video/particle.mp4" type="video/mp4">
               </video>         
         </div>
@@ -27,12 +27,12 @@
            <img src="video/karenVid.png" onclick="playPause('bgvid')" />
         </div>
                 <div class="large-2 columns videoThumb">
-              <video  id="videoThumb5" onclick="playPause('videoThumb5')" poster="video/poster2.png">
+              <video  id="videoThumb5" onmouseover="playPause('videoThumb5')"  onclick="getUrl()" poster="video/poster2.png">
                 <source src="video/particle.mp4" type="video/mp4">
               </video>         
         </div>
         <div class="large-2 columns videoThumb">
-            <img src="video/karenVid.png" onclick="playPause('bgvid')" />
+            <a href="singleVideo.html"><img src="video/karenVid.png"/></a>  
         </div>
       </div>
     </div>
@@ -66,6 +66,9 @@
           myVid.play();
       }
        return false;
+    }
+    function getUrl(){
+      window.location = 'http://localhost:8888/SIGinnovation/singleVideo2.html';
     }
     </script>
   </body>
