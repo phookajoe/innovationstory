@@ -11,28 +11,34 @@
     <div class="row videoThumnbContainer">
       <div class="large-12 columns">
         <div class="large-2 columns videoThumb">
-              <video  id="videoThumb1" onmouseover="playPause('videoThumb1')" onclick="getUrl()" poster="video/poster2.png">
+              <video  id="videoThumb1" onmouseover="play()" onmouseout="pause()" onclick="getUrl('Particle')" poster="video/poster2.png">
                 <source src="video/particle.mp4" type="video/mp4">
               </video>         
         </div>
         <div class="large-2 columns videoThumb">
-            <a href="singleVideo.html"><img src="video/karenVid.png"/></a>  
+              <video  id="videoThumb2" onmouseover="play()" onmouseout="pause()" onclick="getUrl('Karen')" poster="video/karenVid.png">
+                <source src="video/karen.mp4" type="video/mp4">
+              </video>  
         </div>
-                <div class="large-2 columns videoThumb">
-              <video  id="videoThumb3" onmouseover="playPause('videoThumb3')"  onclick="getUrl()"  poster="video/poster2.png">
+        <div class="large-2 columns videoThumb">
+              <video  id="videoThumb3" onmouseover="play()" onmouseout="pause()"  onclick="getUrl('Particle')"  poster="video/poster2.png">
                 <source src="video/particle.mp4" type="video/mp4">
               </video>         
         </div>
         <div class="large-2 columns videoThumb">
-           <img src="video/karenVid.png" onclick="playPause('bgvid')" />
+              <video  id="videoThumb4" onmouseover="play()" onmouseout="pause()" onclick="getUrl('Karen')" poster="video/karenVid.png">
+                <source src="video/karen.mp4" type="video/mp4">
+              </video>  
         </div>
-                <div class="large-2 columns videoThumb">
-              <video  id="videoThumb5" onmouseover="playPause('videoThumb5')"  onclick="getUrl()" poster="video/poster2.png">
+        <div class="large-2 columns videoThumb">
+              <video  id="videoThumb5" onmouseover="play()" onmouseout="pause()"  onclick="getUrl()" poster="video/poster2.png">
                 <source src="video/particle.mp4" type="video/mp4">
               </video>         
         </div>
         <div class="large-2 columns videoThumb">
-            <a href="singleVideo.html"><img src="video/karenVid.png"/></a>  
+              <video  id="videoThumb6" onmouseover="play()" onmouseout="pause()" onclick="getUrl('Karen')" poster="video/karenVid.png">
+                <source src="video/karen.mp4" type="video/mp4">
+              </video>  
         </div>
       </div>
     </div>
@@ -53,6 +59,20 @@
     myVid.controls=true;
     myVid.autoplay=true;
     myVid.defaultMuted=true;
+
+    var vid1 =document.getElementById("videoThumb1");
+    var vid2 =document.getElementById("videoThumb2");
+    var vid3 =document.getElementById("videoThumb3")
+    var vid4 =document.getElementById("videoThumb4");
+    var vid5 =document.getElementById("videoThumb5");
+    var vid6 =document.getElementById("videoThumb6");
+
+    vid1.defaultMuted=true;
+    vid2.defaultMuted=true;
+    vid3.defaultMuted=true;
+    vid4.defaultMuted=true;
+    vid5.defaultMuted=true;
+    vid6.defaultMuted=true;
    
     function playPause(x)
     {
@@ -67,8 +87,13 @@
       }
        return false;
     }
-    function getUrl(){
-      window.location = 'http://localhost:8888/SIGinnovation/singleVideo2.html';
+    function getUrl(x){
+      if(x == 'Karen'){
+        window.location = 'http://localhost:8888/SIGinnovation/singleVideo.html';
+      }
+      if(x == 'Particle'){
+        window.location = 'http://localhost:8888/SIGinnovation/singleVideo2.html';
+      }
     }
     </script>
   </body>
