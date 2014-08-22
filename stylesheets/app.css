@@ -10098,43 +10098,64 @@ video#bgvid {
   background-size: cover;
 }
 
-/* line 29, ../scss/_custom.scss */
+/* line 30, ../scss/_custom.scss */
 .videoThumnbContainer {
-  margin-top: 30%;
+  padding-top: 100px;
+}
+/* line 33, ../scss/_custom.scss */
+.videoThumnbContainer.home {
+  padding-top: 450px;
 }
 
-/* line 32, ../scss/_custom.scss */
+/* line 37, ../scss/_custom.scss */
 .videoThumb {
   display: block;
   height: 142px;
   overflow: hidden;
 }
-/* line 36, ../scss/_custom.scss */
+/* line 41, ../scss/_custom.scss */
 .videoThumb span {
   display: block;
   min-width: 100%;
   min-height: 100%;
   background: transparent;
 }
-/* line 41, ../scss/_custom.scss */
-.videoThumb span:hover {
-  background: url(../img/pattern-black.png) repeat;
-}
-/* line 45, ../scss/_custom.scss */
+/* line 47, ../scss/_custom.scss */
 .videoThumb img {
   min-width: 100%;
   border: 1px solid #000000;
 }
-/* line 49, ../scss/_custom.scss */
+/* line 51, ../scss/_custom.scss */
 .videoThumb video {
   border: 1px solid #000000;
   height: 142px;
 }
+/* line 54, ../scss/_custom.scss */
+.videoThumb video:hover {
+  border-left: 4px solid #FF5C00;
+}
 
-/* line 55, ../scss/_custom.scss */
+/* line 60, ../scss/_custom.scss */
 ::cue {
   color: #FFF;
   font-family: helvetica;
   background: rgba(0, 0, 0, 0.7);
   font-size: .9em;
+}
+
+/* line 74, ../scss/_custom.scss */
+.overlayBox {
+  background: rgba(0, 0, 0, 0.6);
+  border: 1px solid #000000;
+  color: #FFF;
+  border-left: 4px solid #FF5C00;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 81, ../scss/_custom.scss */
+.overlayBox h3 {
+  color: #ffffff;
 }

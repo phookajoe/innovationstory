@@ -26,8 +26,13 @@ video#bgvid {
 	background: url(../video/videoPoster.jpg) no-repeat;
 	background-size: cover;
 }
+	
 .videoThumnbContainer{
-	margin-top:30%;
+	//margin-top:100px;
+	padding-top:100px;
+	&.home{
+		padding-top:450px;
+	}
 }
 .videoThumb{
 	display:block;
@@ -38,9 +43,6 @@ video#bgvid {
 		min-width:100%;
 		min-height:100%;
 		background:transparent;
-		&:hover{
-			background:url(../img/pattern-black.png) repeat;	
-		} 
 	}
 	img{
 		min-width:100%;
@@ -49,6 +51,9 @@ video#bgvid {
 	video{
 		border:1px solid #000000;
 		height:142px;
+		&:hover{
+			border-left:4px solid #FF5C00;
+		}
 	}
 }
 
@@ -57,4 +62,23 @@ video#bgvid {
   font-family:helvetica;
   background:rgba(#000000, .7);
   font-size:.9em;
+}
+
+
+video::-webkit-media-controls-enclosure { 
+	//position:absolute;
+	//z-index:10;
+}
+
+
+.overlayBox{
+	background:rgba(#000000, .6);
+	border:1px solid #000000;
+	//min-height:200px;
+	color:#FFF;
+	border-left:4px solid #FF5C00;
+	@include border-radius(5px);
+		h3{
+			color:#ffffff;
+		}
 }
